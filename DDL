@@ -1,0 +1,53 @@
+-- 1. Create Database
+
+-- CREATE DATABASE EmployeeDB;
+
+-- 2. Use the database
+USE EmployeeDB;
+
+-- 3. Create table
+
+-- CREATE TABLE Employee(
+--    Emp_Id int primary Key,
+--    Emp_Name char(100),
+--    Emp_City varchar(100),
+--    Emp_BasicSalary decimal
+-- );
+-- show tables;
+-- desc employee;
+
+-- 4. Insert the data into the table
+  
+ --  Insert into Employee_Details values(101,'Amit', 'Delhi', 20000);
+--   Insert into Employee_Details values(102,'Jay singh', 'Mumbai', 20000);
+--   Insert into Employee_Details values(103,'Joyti Raj', 'Delhi', 50000);
+--   Insert into Employee_Details values(104,'Vipul Kumar', 'Mumbai', 60000);
+--   Insert into Employee_Details values(105,'Manish Pandey', 'Chennai', 50000);
+--   Insert into Employee_Details values(106,'John', 'Delhi', 40000);
+  -- Insert into Employee values(107,'Harry', 'Chennai', 20000);
+--   Insert into Employee values(108,'Lakshmi', 'HYD', 40000);
+--   Insert into Employee values(109,'Sudeep', 'Chennai', 70000);
+--   Insert into Employee values(1010,'Jaypal', 'Delhi', 50000);
+--   Insert into Employee values(1011,'AB', 'HYD', 40000);
+--   Insert into Employee values(1012,'CC', 'HYD', 20000);
+--   Insert into Employee values(1013,'DD', 'HYD', 40000);
+--   Insert into Employee values(1014,'EE', 'Mumbai', 70000);
+--   Insert into Employee values(1015,'FF', 'Mumbai', 50000);
+--   Insert into Employee values(1016,'FF', 'Delhi', 50000);
+
+-- 5. Display Table
+SELECT emp_id, emp_name, emp_city FROM Employee_Details
+where Emp_BasicSalary>=20000
+order by emp_city;
+
+-- 6. How to empty table
+-- Truncate table Employee;
+
+-- 7. How  to rename table name
+-- Rename table Employee to Employee_Details;
+
+-- 8. How to alter the table
+-- Alter Table Employee_Details Add column company_Name varchar(100);
+
+select* from Employee_Details
+order by emp_name; 
